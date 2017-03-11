@@ -1,25 +1,13 @@
+`/!\ Work In Progress /!\`
+`/!\ Doesn't Even Work /!\`
+
 # Crystal git
 
-An attempt to make a version control system, based on git, where everything fits together and just makes sense, like a beautiful and symmetric crystal.
+A wrapper arond git to make my life easier.
 
-*Crystal git* is based on the mainline/feature branching model, where tags serve as production releases. Here's an example of a person using `cg`, crystal git, for a new repo.
+*Crystal git* is based on the mainline/feature branching model. It doesn't do releases. It doesn't do shit for your team, really, it's just supposed to make local development easier.
 
-```
-npm i -g crystal-git
-cg init
-cg watch
-```
-
-Here's an example of a person using crystal git in an existing repo. It's pretty likely that you can use it even if the rest of your team doesn't want to.
-
-```
-npm i -g crystal-git
-cg init
-# choose mainline = development
-cg watch
-```
-
-Crystal git helps you not lose your work, ever.
+Crystal git is supposed to help you not lose your work, ever.
 
  - Crystal git commits changes every five minutes locally, so you can time-travel through your day. Don't worry, it will squash all those commits later, so the commit history isn't ugly.
  - Crystal git is hard to fuck up. It takes care of merging and rebasing for you using best practices.
@@ -27,7 +15,7 @@ Crystal git helps you not lose your work, ever.
  - Crystal git encourages you to push code to the mainline more frequently, and always updates your feature branches with the latest code from the mainline, helping everyone prevent conflicts
 
 
-# Usage
+# Possible Usage Some Day In The FuTuRe
 
 cg init
 cg watch

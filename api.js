@@ -57,7 +57,8 @@ function watch (directory) {
     }
 
     // pull latest
-    
+    git('pull --rebase') 
+
 
 
   });

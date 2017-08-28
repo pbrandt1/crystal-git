@@ -3,7 +3,9 @@ var cg = require('./api')
 var _ = require('lodash')
 
 var argv = require('minimist')(process.argv.slice(2));
-console.dir(argv);
+
+var debug = console.log.bind(console)
+debug(argv);
 
 const command = _.get(argv, '_.0')
 const target = _.get(argv, '_.1')
@@ -32,7 +34,11 @@ switch (command) {
     break
 
   default:
-    console.log('do not want to do that')
+    debug('do not want to do that')
+    help()
 
 }
 
+function help() {
+  console.log('crystal help message')
+}
